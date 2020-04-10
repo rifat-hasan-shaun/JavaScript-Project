@@ -88,6 +88,7 @@ function backSpace(){
 function compute(){
     var key = document.querySelector("input");
     var ans = +eval(key.value);
+    if(ans=="Infinity") ans="undefined";
     document.querySelector("#answer").value = ans;
     flag=1;
 }
